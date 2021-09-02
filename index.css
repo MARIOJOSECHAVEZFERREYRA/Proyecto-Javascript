@@ -1,0 +1,21 @@
+*{
+ box-sizing: border-box;
+ margin: 0;
+ padding: 0;
+}
+body{
+    background-color: #74992e;
+}
+#container{
+    color: azure;
+}
+header{
+    height: 75px;
+    width: 75%;
+    text-align: center;
+    padding: 15px;
+    border: 1px solid black;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
