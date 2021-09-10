@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="./index.css">
+    <title>Figuras Geométricas | JavaScript </title>
+</head>
+<body>
+    <div id="container"> 
+    <header> 
+            <h1 class="title">Figuras Geométricas</h1>
+        <nav>
+            <ul class="nav-options">
+                <li><a href="">Inicio</a></li>
+                <li><a href="">Taller #1</a></li> 
+                <li><a href="">Taller #2</a></li>
+                <li><a href="">Taller #3</a></li>
+            </ul>
+        </nav>
+    </header>
+        
+        <main>
+            <!-- CODIGO DEL CUADRADO -->
+
+            <section >  
+                <h2>Calcula el área y perimetro de un cuadrado</h2>
+                <form action="">
+                    <!-- LADO -->
+                    <label for="InputCuadrado">Escribe cuanto mide el cuadrado: </label>
+                    <input id="InputCuadrado" type="number">
+                    <!-- BOTONES -->
+                    <button type="button" onclick="calcularPerimetrocuadrado()">Calcular el area</button>
+                    <button type="button" onclick="calcularAreacuadrado()">Calcular el perimetro</button>
+                </form>
+            </section>
+            
+            <!-- CODIGO DEL TRIANGULO -->
+            
+            <section >
+                <h2>Calcula el área y perimetro de un Triangulo</h2>
+                <form action="">
+                    <!-- lado A -->
+                    <label for="ladoAtriangulo">Escribe el Primer lado del triangulo: </label>
+                    <input id="ladoAtriangulo" type="number">
+                    <!-- lado B -->
+                    <label for="ladoBtriangulo">Escribe el Segundo lado del triangulo: </label>
+                    <input id="ladoBtriangulo" type="number">
+                    <!-- Base -->
+                    <label for="baseTriangulo">Escribe la Base del triangulo: </label>
+                    <input id="baseTriangulo" type="number">
+                    <!-- BOTONES -->
+                    <button type="button" onclick="calcularAreaTriangulo()">Calcular el area</button>
+                    <button type="button" onclick="calcularPerimetroTriangulo()">Calcular el perimetro</button>
+                </form>
+            </section>    
+            
+            <!-- CODIGO DEL CIRCULO -->
+            
+            <section> 
+                <h2>Calcula el área y perimetro de un cuadrado</h2>
+                <form action="">
+                    <!-- RADIO -->
+                    <label for="RadioCirculo">Escribe el radio del circulo: </label>
+                    <input id="RadioCirculo" type="number">
+                    
+                    <!-- BOTONES -->
+                    <button type="button" onclick="calcularAreaCirculo()">Calcular el area</button>              
+                    <button type="button" onclick="calcularPerimetroCirculo()">Calcular el Perimetro</button>
+                </form>
+            </section>
+        </div>
+        </main>
+    </body>
+<script src="./index.js" ></script>
+</html>
