@@ -26,13 +26,12 @@
     <main>
         <div class="main-cards">
             <!-- CODIGO DEL CUADRADO -->
-            <section class="section-card">  
-                <h1>Calcula el área y perimetro de un cuadrado</h1>
-                <hr>
+            <section class="section-card square-card">  
+                <h2><span class="square"></span>Cuadrado</h2>
                 <form action="">
                     <!-- LADO -->
-                    <label for="InputCuadrado">Escribe cuanto mide el cuadrado: </label>
-                    <input id="InputCuadrado" type="number">
+                    <label for="InputCuadrado" class="label">Escribe cuanto mide el cuadrado: </label>
+                    <input id="InputCuadrado" class="input-button" type="number">
                     <!-- BOTONES -->
                     <button type="button" onclick="calcularPerimetrocuadrado()">Calcular el area</button>
                     <button type="button" onclick="calcularAreacuadrado()">Calcular el perimetro</button>
@@ -41,18 +40,18 @@
             
             <!-- CODIGO DEL TRIANGULO -->
             
-            <section class="section-card">
-                <h1>Calcula el área y perimetro de un Triangulo</h1>
+            <section class="section-card triangle-card">
+                <h2><span class="triangle"></span>Triangulo</h2>
                 <form action="">
                     <!-- lado A -->
-                    <label for="ladoAtriangulo">Escribe el Primer lado del triangulo: </label>
-                    <input id="ladoAtriangulo" type="number">
+                    <label for="ladoAtriangulo" class="label">Escribe el Primer lado del triangulo: </label>
+                    <input id="ladoAtriangulo" class="input-button" type="number">
                     <!-- lado B -->
-                    <label for="ladoBtriangulo">Escribe el Segundo lado del triangulo: </label>
-                    <input id="ladoBtriangulo" type="number">
+                    <label for="ladoBtriangulo" class="label">Escribe el Segundo lado del triangulo: </label>
+                    <input id="ladoBtriangulo"  class="input-button" type="number">
                     <!-- Base -->
-                    <label for="baseTriangulo">Escribe la Base del triangulo: </label>
-                    <input id="baseTriangulo" type="number">
+                    <label for="baseTriangulo" class="label">Escribe la Base del triangulo: </label>
+                    <input id="baseTriangulo" class="input-button" type="number">
                     <!-- BOTONES -->
                     <button type="button" onclick="calcularAreaTriangulo()">Calcular el area</button>
                     <button type="button" onclick="calcularPerimetroTriangulo()">Calcular el perimetro</button>
@@ -61,12 +60,12 @@
             
             <!-- CODIGO DEL CIRCULO -->
             
-            <section class="section-card"> 
-                <h1>Calcula el área y perimetro de un cuadrado</h1>
+            <section class="section-card circle-card"> 
+                <h2><span class="circle"></span>Circulo</h2>
                 <form action="">
                     <!-- RADIO -->
-                    <label for="RadioCirculo">Escribe el radio del circulo: </label>
-                    <input id="RadioCirculo" type="number">
+                    <label for="RadioCirculo" class="label">Escribe el radio del circulo: </label>
+                    <input id="RadioCirculo"  class="input-button" type="number">
                     
                     <!-- BOTONES -->
                     <button type="button" onclick="calcularAreaCirculo()">Calcular el area</button>              
