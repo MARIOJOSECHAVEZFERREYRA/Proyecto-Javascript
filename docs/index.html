@@ -8,26 +8,27 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="./index.css">
     <title>Figuras Geométricas | JavaScript </title>
+    <link rel="shortcut icon" type="image/x-icon" href="../Imagenes/Geometry-icon.svg">
 </head>
 <body>
-    <div id="container"> 
-    <header> 
-            <h1 class="title">Figuras Geométricas</h1>
-        <nav>
-            <ul class="nav-options">
-                <li><a href="">Inicio</a></li>
-                <li><a href="">Taller #1</a></li> 
-                <li><a href="">Taller #2</a></li>
-                <li><a href="">Taller #3</a></li>
-            </ul>
-        </nav>
-    </header>
-        
-        <main>
+        <header> 
+            <img src="../Imagenes/Geometry-icon.svg" alt="geometric-icon">
+            <div class="header--title-container"> 
+                <h1 class="title">Figuras Geométricas</h1>
+                <p>Les muestro mi practica del curso de Javascript.</p>
+                <div class="header-buttons">
+                    <button>Taller 1</button>
+                    <button>Taller 2</button>
+                    <button>Taller 3</button>
+                </div>
+            </div>
+        </header>
+    <main>
+        <div class="main-cards">
             <!-- CODIGO DEL CUADRADO -->
-
-            <section >  
-                <h2>Calcula el área y perimetro de un cuadrado</h2>
+            <section class="section-card">  
+                <h1>Calcula el área y perimetro de un cuadrado</h1>
+                <hr>
                 <form action="">
                     <!-- LADO -->
                     <label for="InputCuadrado">Escribe cuanto mide el cuadrado: </label>
@@ -40,8 +41,8 @@
             
             <!-- CODIGO DEL TRIANGULO -->
             
-            <section >
-                <h2>Calcula el área y perimetro de un Triangulo</h2>
+            <section class="section-card">
+                <h1>Calcula el área y perimetro de un Triangulo</h1>
                 <form action="">
                     <!-- lado A -->
                     <label for="ladoAtriangulo">Escribe el Primer lado del triangulo: </label>
@@ -60,8 +61,8 @@
             
             <!-- CODIGO DEL CIRCULO -->
             
-            <section> 
-                <h2>Calcula el área y perimetro de un cuadrado</h2>
+            <section class="section-card"> 
+                <h1>Calcula el área y perimetro de un cuadrado</h1>
                 <form action="">
                     <!-- RADIO -->
                     <label for="RadioCirculo">Escribe el radio del circulo: </label>
@@ -73,7 +74,7 @@
                 </form>
             </section>
         </div>
-        </main>
-    </body>
+    </main>
+</body>
 <script src="./index.js" ></script>
 </html>

@@ -1,75 +1,104 @@
-*{
- box-sizing: border-box;
- margin: 0;
- padding: 0;
+:root{
+    --AmarilloJavascript-color : #FBD200;
+    --green-color: #04AA6D;
+    --green-hover: #059862;
+    --Negro-color: #000000;
+    --gray:#BABABA;
+    --just-white: #FFFFFF;
+    --soft-orange:#FFE9D5;
 }
-body{
-    /* background-color: #fed439; */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%;
     font-family: 'Noto Sans JP', sans-serif;
 }
-
 header{
-    background-color: #000000;
-    width: 100vw;
-    height: 15vh;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 100%;
+	min-width: 320px;
+	height: 334px;
+	text-align: center;
+	background:#282A35;
+}
+header img {
+	width: 150px;
+	height: 100px;
+	margin-top: 40px;
+	align-self: center; /* para centrar un solo elemento hijo de un flex container */
+}
+.header--title-container{
+	width: 90%;
+	min-width: 288px;
+	max-width: 900px;
+	height: 200px;
+	text-align: center;
+	align-self: center;
+}
+.header--title-container h1{
+	font-size: 2.4rem;
+	font-weight: bold;
+	line-height: 2.6rem;
+	color: var(--green-color);
+}
+.header--title-container p{
+	margin-top: 25px;
+	font-size: 1.4rem;
+	font-weight: 500;
+	line-height: 1.8rem;
+	color: var(--just-white);
+}
+.header-buttons{
     display: flex;
-    border: 0.5px solid  #29240E;    
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+    height: 80px;
 }
-
-header h1{
-    color: white;
-    display: flex;
-    justify-content: center; 
-    align-items: center; 
-    width: 50vw;
+.header-buttons button{
+    width: 80px;
+    height: 60%;
+    margin: 0 20px 0 20px;
+    border: none;
+    background-color: var(--green-color);
+    color: var(--just-white);
+    font-weight: 500;
+    border-radius: 5px;
 }
-
-
-
-
-header nav{
-    display: flex;
-    width: 50vw;
-    
+.header-buttons button:hover{
+    background-color: var(--green-hover);
 }
-header nav .nav-options {
-    display: inherit;
-    list-style: none;
-    justify-content: right; 
-    align-items: center; 
-    width: inherit;
-    margin-right: 10%;
-}
-
-header nav .nav-options a{
-    color: white;
-    margin: 15px;   
-    font-size: 20px;
-}
-
-a{
-    text-decoration: none;
-}
-a:hover{
-    text-decoration: underline;
-
-}
-
-
 main{
-    background-color: #FBD200;
-    height: 85vh;
+    width: 100%;
+    height: auto; 
+    background-color: #96D4D4;
+}
+main .main-cards{
     display: flex;
-}
-main section{
-    border: 1px solid black;
-    height: 60vh;
-    width:40vw;
-    display: inherit;
-    margin: 40px;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px 0 40px 0;
     
 }
-h2{
-    color: #EE3E3C;
-    
+main .section-card{ 
+    width: 85%;
+    max-width: 420px;
+    height: 400px; /*  todavia no esta determinado */
+    margin: 0 auto;
+    margin-bottom: 25px;
+    border-radius: 4px;
+    background-color: var(--just-white);
+}
+/* Estilos de los cards */
+main .section-card h1{
+    font-size: 2.1rem;
+    line-height: 2.6rem;
+    color: var(--green-color);
+    padding: 110px 0 10px 0;
 }
