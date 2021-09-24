@@ -1,0 +1,160 @@
+:root{
+    --AmarilloJavascript-color : #FBD200;
+    --green-color: #04AA6D;
+    --green-hover: #059862;
+    --Negro-color: #000000;
+    --gray:#BABABA;
+    --just-white: #FFFFFF;
+    --soft-orange:#FFE9D5;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+header{
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 100%;
+	min-width: 320px;
+	height: 334px;
+	text-align: center;
+	background:#282A35;
+}
+header img {
+	width: 150px;
+	height: 100px;
+	align-self: center; /* para centrar un solo elemento hijo de un flex container */
+}
+.header--title-container{
+	width: 90%;
+	min-width: 288px;
+	max-width: 900px;
+	height: 200px;
+	text-align: center;
+	align-self: center;
+}
+.header--title-container h1{
+	font-size: 2.4rem;
+	font-weight: bold;
+	line-height: 2.6rem;
+	color: var(--green-color);
+}
+.header--title-container p{
+	margin-top: 25px;
+	font-size: 1.4rem;
+	font-weight: bold;
+	line-height: 1.8rem;
+	color: var(--just-white);
+}
+.header-buttons{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+    height: 80px;
+}
+.header-buttons button{
+    width: 100px;
+    height: 60%;
+    margin: 0 10px 0 10px;
+    border: none;
+    background-color: var(--green-color);
+    color: var(--just-white);
+    font-weight: 500;
+    border-radius: 5px;
+}
+.header-buttons button:hover{
+    background-color: var(--green-hover);
+}
+main{
+    width: 100%;
+    height: auto; 
+    background-color: var(--just-white);
+}
+main .main-cards{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px 0 40px 0;
+    width: inherit;
+}
+main .section-card{ 
+    width: 90%;
+    max-width: 300px;
+    height: auto; 
+    margin: 0 auto;
+    margin-bottom: 25px;
+    border-radius: 12px;
+}
+main .square-card{
+    background-color: #00F2B5;
+}
+main .triangle-card{
+    background-color: #D1C9DF;
+}
+main .circle-card{
+    background-color: #F7BF70;
+}
+/* Estilos de los cards del title*/
+main .section-card h2{
+    display: flex;
+    align-items: center;
+    font-size: 2.4rem;
+    line-height: 2.6rem;
+    color: black;
+    padding: 20px 0 20px 20px;
+}
+main span{
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+main .square{
+    background-image: url('../Imagenes/square-icon.svg');
+}
+main .triangle{
+    background-image: url('../Imagenes/triangle-icon.svg');
+}
+main .circle{
+    background-image: url('../Imagenes/circle-icon.svg');
+}
+
+main form{
+    width: 90%;
+    margin: 0 auto;
+}
+
+main .main-card-label{
+    font-size: 1.5rem;
+    line-height: 1.6rem;
+    margin: 10px;
+}
+main .main-card-input{
+    margin: 15px 10px 20px 15px;
+}
+main input{
+    border: none;
+    width: 100%;
+    height: 25px;
+}
+main .main-card-button{
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 10px 20px 10px;
+}
+main button{
+    border: none;
+    width: 30%;
+    height: 35px;
+    background-color: #ffff;
+}
+main button:hover{
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.16);
+}
