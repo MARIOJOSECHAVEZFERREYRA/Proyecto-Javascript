@@ -58,7 +58,7 @@ function areatriangulo(base,altura){
 }
 function calcularAreaTriangulo(){
     const ladoA = document.getElementById("ladoAtriangulo");
-    const ladoAvalue = ladoA.value;
+    const ladoAvalue = ladoA.value; 
     const ladoB = document.getElementById("ladoBtriangulo");
     const ladoBvalue = ladoB.value;
     const Base = document.getElementById("baseTriangulo");
@@ -92,9 +92,62 @@ return (radio **2 ) * PI;
 function calcularAreaCirculo(){
     const radio = document.getElementById("RadioCirculo");
     const RadioValue = radio.value;
-    const area = areacirculo(radio.value);
+    const area = areacirculo(RadioValue);
     alert(area);
 }
+console.groupEnd();
+    /* TRIANGULO ISOSCELES */
+console.group("TRIANGULO ISOSCELES");
 
+function AlturaTrianguloIsosceles(){
+    const LadoA = document.getElementById("LadoAIsosceles");
+    const LadoAvalue= LadoA.value;
+    const LadoB = document.getElementById("LadoBIsosceles");
+    const LadoBvalue= LadoB.value;
+    const Base = document.getElementById("BaseIsosceles");
+    const Basevalue = Base.value;
+    console.log(LadoB.value);
+    if(LadoAvalue == LadoBvalue && LadoAvalue != Basevalue){
+        const altura = Math.sqrt(LadoAvalue**2 - (LadoBvalue**2/4));
+        alert(altura);
+    }
+    else{
+        alert("El triangulo no es isosceles");
+        }
+    }
+
+    function AreaTrianguloIsosceles(){
+    const LadoA = document.getElementById("LadoAIsosceles");
+    const LadoAvalue= LadoA.value;
+    const LadoB = document.getElementById("LadoBIsosceles");
+    const LadoBvalue= LadoB.value;
+    const Base = document.getElementById("BaseIsosceles");
+    const Basevalue = Base.value;
+    console.log(LadoB.value);
+    if(LadoAvalue == LadoBvalue && LadoAvalue != Basevalue){
+        const altura = Math.sqrt(LadoAvalue**2 - (LadoBvalue**2/4));
+        const Area = (Basevalue * altura)/2;
+        alert(Area);
+
+    }
+    else{
+        alert("El triangulo no es isosceles");
+        }
+    }
+    function PerimetroTrianguloIsosceles(){
+    const LadoA = document.getElementById("LadoAIsosceles");
+    const LadoAvalue= LadoA.value;
+    const LadoB = document.getElementById("LadoBIsosceles");
+    const LadoBvalue= LadoB.value;
+    const Base = document.getElementById("BaseIsosceles");
+    const Basevalue = Base.value;
+    if(LadoAvalue == LadoBvalue && LadoAvalue != Basevalue){
+        const perimetro = (LadoAvalue * 2) + parseInt(Basevalue);
+        alert(perimetro);
+    }
+    else{
+        alert("El triangulo no es isosceles");
+        }
+    }  
 
 console.groupEnd();
