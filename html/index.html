@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<!-- ---------------MEDIA QUERIES------------------ -->
+<link rel="stylesheet" href="../css/Figuras/style.css">
+<link rel="stylesheet" href="../css/Figuras/desktop.css" media="(min-width: 1024px)">
+<link rel="stylesheet" href="../css/Figuras/tablet.css" media="(min-width: 768px)">
+    <!-- ----------------------------------------------- -->
+    <title>Figuras Geométricas | JavaScript </title>
+    <link rel="shortcut icon" type="image/x-icon" href="../Imagenes/Geometry-icon.svg">
+</head>
+<body>
+        <header> 
+            <img src="../Imagenes/Figuras/Geometry-icon.svg" alt="geometric-icon">
+            <div class="header--title-container"> 
+                <h1 class="title">Figuras Geométricas</h1>
+                <p>Les muestro mi practica del curso de Javascript.</p>
+                <div class="header-buttons">
+                    <button><a href="../html/index.html">Figuras</a></button>
+                    <button><a href="../html/Descuentos.html">Descuentos</a></button>
+                    <button>Taller 3</button>
+                    <button>Taller 3</button>
+                </div>
+            </div>
+        </header>
+
+
+    <main>
+        <div class="main-cards">
+            <!-- CODIGO DEL CUADRADO -->
+            <section class="section-card square-card">  
+                <h2><span class="square"></span>Cuadrado</h2>
+                <form action="">
+                    <div class="main-card-label">
+                        <label for="InputCuadrado" class="label">Escribe cuanto mide el cuadrado: </label>
+                    </div>
+                    <div class="main-card-input">
+                        <input id="InputCuadrado" class="input-button" type="number">
+                    </div>
+                    <div class="main-card-button">
+                        <button type="button" onclick="calcularPerimetrocuadrado()">Área</button>
+                        <button type="button" onclick="calcularAreacuadrado()">Perímetro</button>
+                    </div>
+                </form>
+            </section>
+            <!-- CODIGO DEL TRIANGULO -->
+            <section class="section-card triangle-card">
+                <h2><span class="triangle"></span>Triángulo</h2>
+                <form action="">
+
+                    <div class="main-card-label">
+                    <label for="ladoAtriangulo" class="label">Escribe el Primer lado del triangulo: </label>
+                    </div>
+
+                    <div class="main-card-input">
+                    <input id="ladoAtriangulo" class="input-button" type="number">
+                    </div>
+
+                    <div class="main-card-label">
+                    <label for="ladoBtriangulo" class="label">Escribe el Segundo lado del triangulo: </label>
+                    </div>
+
+                    <div class="main-card-input">
+                    <input id="ladoBtriangulo"  class="input-button" type="number">
+                    </div>
+
+                    <div class="main-card-label">
+                    <label for="baseTriangulo" class="label">Escribe la Base del triangulo: </label>
+                    </div>
+
+                    <div class="main-card-input">
+                    <input id="baseTriangulo" class="input-button" type="number">
+                    </div>
+
+                    <div class="main-card-button">
+                    <button type="button" onclick="calcularAreaTriangulo()">Área</button>
+                    <button type="button" onclick="calcularPerimetroTriangulo()">Perímetro</button>
+                    </div>
+
+                </form>
+            </section>    
+            <!-- CODIGO DEL CIRCULO -->
+            <section class="section-card circle-card"> 
+                <h2><span class="circle"></span>Círculo</h2>
+                <form action="">
+                    <div class="main-card-label">
+                    <label for="RadioCirculo" class="label">Escribe el radio del circulo: </label>
+                    </div>
+
+                    <div class="main-card-input">
+                    <input id="RadioCirculo"  class="input-button" type="number">
+                    </div>
+
+                    <div class="main-card-button">
+                    <button type="button" onclick="calcularAreaCirculo()">Área</button>              
+                    <button type="button" onclick="calcularPerimetroCirculo()">Perímetro</button>
+                    </div>
+
+                </form>
+            </section>
+            <!-- CODIGO TRIANGULO ISOSCELES -->
+            <section class="section-card triangle-card">
+                <h2><span class="triangle"></span>Triángulo isósceles</h2>
+                <form action="">
+
+                    <div class="main-card-label">
+                    <label for="LadoAIsosceles" class="label">Escribe el Primer lado del triangulo: </label>
+                    </div>
+
+                    <div class="main-card-input">
+                    <input id="LadoAIsosceles" class="input-button" type="number">
+                    </div>
+
+                    <div class="main-card-label">
+                    <label for="LadoBIsosceles" class="label">Escribe el Segundo lado del triangulo: </label>
+                    </div>
+
+                    <div class="main-card-input">
+                    <input id="LadoBIsosceles"  class="input-button" type="number">
+                    </div>
+
+                    <div class="main-card-label">
+                    <label for="BaseIsosceles" class="label">Escribe la Base del triangulo: </label>
+                    </div>
+
+                    <div class="main-card-input">
+                    <input id="BaseIsosceles" class="input-button" type="number">
+                    </div>
+
+                    <div class="main-card-button">
+                    <button type="button" onclick="AreaTrianguloIsosceles()">Área</button>
+                    <button type="button" onclick="PerimetroTrianguloIsosceles()">Perímetro</button>
+                    <button type="button" onclick="AlturaTrianguloIsosceles()">Altura</button>
+                    </div>
+
+                </form>
+            </section>    
+        
+        
+        </div>
+    </main>
+</body>
+<script src="../js/index.js" ></script>
+</html>

@@ -1,0 +1,173 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html{
+    font-family: 'Roboto', sans-serif;
+    font-size: 62.5%;
+}
+header{
+    width: 100%;
+    height: 220px;
+    background-color: #950740;
+    color: white;
+}
+header .header-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header img{
+    margin: 20px 10px 20px 20px ;
+}
+header p{
+    display: flex;
+    justify-content: center;
+    font-size: 1.2rem;
+}
+header .nav-options {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 40px 0 40px 0;
+}
+header ul{
+    display: flex;
+    gap: 22px;
+}
+header ul li a{
+    width: 100%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    border: 1px solid white;
+    color: white;
+    padding: 0 10px 0 10px;
+}
+header li{
+    text-decoration: none;
+    list-style:none;
+
+}
+header a{
+    text-decoration: none;
+    
+}
+main{
+    width: 100%;
+    height: auto;
+    background-color: #272727;
+}
+main .cards{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px 0 40px 0;
+    width: inherit;
+}
+main section{
+    width: 90%;
+    max-width: 500px;
+    height: auto; 
+    margin: 0 auto;
+    margin-bottom: 25px;
+    border-radius: 12px;
+    border: 1px solid white;
+    padding: 15px;
+}
+main section h2{
+    width: 100%;
+    padding: 10px 0 10px 0;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    font-weight: 700;
+    color: #950740;
+}
+
+main section .label{
+    width: 100%;
+    padding: 10px 0 10px 0;
+    font-size: 1.4rem;
+    color: #f0f0f0;
+}
+main section input{
+    width: 100%;
+    height: 25px;
+    border: none;
+}
+main section .last-input{
+    margin-bottom: 15px;
+}
+main section button{
+    width: 100%;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: inherit;
+    color: #950740;
+    border:1px solid #950740;
+}
+main section p{
+    font-size: 1.6rem;
+    color: #F0F0F0;
+    margin: 20px 0 10px 0;
+}
+main section .coupon-button{
+    position: relative;
+    top: 10px;
+}
+footer{
+    width: 100%;
+    height: 15vh;
+    background-color: orange;
+}
+footer h2{
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.4rem;
+    color: #F0F0F0;
+}
+@media (min-width: 1000px){
+    main .cards{
+        flex-direction: row;
+    }
+}
+@media (min-width: 1024px){
+    header{
+        height: 15vh;
+    }
+    header .header-container{
+        display: flex;
+        justify-content: flex-start;
+    }
+    header h1{
+        font-size: 2.4rem;
+    }
+    header p{
+        position: relative;
+        top: -30px;
+        font-size: 1.8rem;
+    }
+    header .nav-options{
+        display: flex;
+        justify-content: flex-end;
+        position: relative;
+        top: -135px;
+        right: 20px;
+        font-size: 1.4rem;
+    }
+    main{
+        height: 70vh;
+    }
+}
+@media (min-width: 1440px){
+header  p{
+    position: relative;
+    top: -65px;
+    font-size: 2.4rem;
+}
+}
